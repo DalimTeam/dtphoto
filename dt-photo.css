@@ -1,0 +1,195 @@
+.dt-photo-upload-container {
+	position: absolute;
+	display: inline-block;
+	box-sizing: border-box;
+	z-index: 10000;
+	left: 0;
+	top: 0;
+}
+.dt-photo-upload-button {
+	position: absolute;
+	z-index: 30000;
+	left: 50%;
+	top: 50%;
+    background-color: #ffffff;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #888888;
+    font-size: 13px;
+    padding: 5px 20px 5px 20px;
+    border: 3px solid #dddddd;
+    text-decoration: none;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 0 10px #999999;
+}
+.dt-photo-upload-error {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+}
+.dt-photo-upload-button:hover {
+    background-color: #fafafa;
+	border: 3px solid #cccccc;
+}
+.dt-photo-preview-button {
+	position: absolute;
+	z-index: 70001;
+	bottom: 5px;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #888888;
+    font-size: 13px;
+    padding: 5px 20px 5px 20px;
+    border: 3px solid #dddddd;
+    text-decoration: none;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 0 10px #999999;
+}
+.dt-photo-preview-button:hover {
+    background-color: #fafafa;
+	border: 3px solid #cccccc;
+}
+.dt-photo-upload-form {
+	width: 0;
+	height: 0;
+	left: -100px;
+	top: -100px;
+	position: absolute;
+	overflow: hidden;
+}
+.dt-photo-upload-bg {
+	position: absolute;
+	z-index: 20000;
+	box-sizing: border-box;
+	left: 0;
+	top: 0;
+	background-color: rgba(133, 166, 66, 0.2);
+}
+.dt-photo-upload-iframe {
+	display: none;
+}
+.dt-photo-preview-container {
+	position: absolute;
+	z-index: 50000;
+	display: inline-block;
+	width: 650px;
+	height: 600px;
+	border: 2px solid #d0d0d0;
+	border-radius: 5px;
+	background-color: #ffffff;
+	left: 50%;
+	top: 50%;
+	margin-left: -325px;
+	margin-top: -300px;
+	box-sizing: border-box;
+	overflow: hidden;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+.dt-photo-preview-background {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 49999;
+}
+.dt-photo-preview-image {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+	
+}
+.dt-photo-select-square {
+	position: absolute;
+	border: 2px dashed #d9d9d9;
+	display: inline-block;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	z-index: 70000;
+	box-sizing: border-box;
+	background-color: transparent;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+	text-align: center;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.dt-photo-scale-square {
+	position: absolute;
+	border: 0;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	cursor: move;
+	z-index: 80000;
+	box-sizing: border-box;
+	background-color: transparent;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+	background-image: URL('/img/move.png');
+	background-repeat: no-repeat;
+	overflow: hidden;
+	right: -10px;
+	bottom: -10px;
+}
+.dt-photo-square-bg {
+	position: absolute;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 600px;
+	height: 600px;
+	top: 0;
+	left: 0;
+}
+.dt-photo-loader {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -12px;
+	margin-left: -12px;
+}
+#dt-photo-ajax-loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+	z-index: 80000;
+}
+#dt-photo-ajax-loader img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 50px;
+	background-color: #ffffff;
+	border: 1px solid #fafafa;
+	border-radius: 10px;
+	width: 24px;
+	height: 24px;
+	margin-left: -63px;
+	margin-top: -63px;
+}
